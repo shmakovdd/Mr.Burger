@@ -11,9 +11,16 @@
             background-color: rgba($color: #000, $alpha: .4);
         }
     }
+
+    .btn {
+        align-self: flex-start;
+    }
 }
 
 .review__hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
