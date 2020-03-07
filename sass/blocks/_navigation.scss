@@ -1,0 +1,34 @@
+.navigation {
+    margin-left: 50px;
+}
+
+.navigation__list, .navigation__item {
+    display: flex;
+
+    .navigation__item {
+        align-items: center;
+        margin-right: 15px;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: $white;
+            margin-left: 15px;
+        }
+
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+
+        &:hover {
+            .navigation__link {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}

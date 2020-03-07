@@ -1,0 +1,21 @@
+$feature__title-fs: 24px;
+$feature-margin: 25px;
+
+@import '../layout/fonts';
+
+.feature__title {
+    @include lifehack;
+    color: $black;
+    font-size: $feature__title-fs;
+    margin-bottom: $feature-margin;
+}
+
+.feature__img {
+    margin-bottom: $feature-margin;
+    width: 85px;
+    height: 85px;
+}
+
+.feature__descr {
+    line-height: 1.7;
+}

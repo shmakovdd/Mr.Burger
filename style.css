@@ -1,0 +1,470 @@
+@font-face {
+  src: url(./fonts/Gagalin-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+}
+@font-face {
+  src: url(./fonts/Lifehack-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-B.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  position: relative;
+  font-family: "ubuntu";
+  font-weight: 300;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 960px;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+}
+
+p, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+@font-face {
+  src: url(./fonts/Gagalin-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+}
+@font-face {
+  src: url(./fonts/Lifehack-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-B.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+.header {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.header a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@font-face {
+  src: url(./fonts/Gagalin-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+}
+@font-face {
+  src: url(./fonts/Lifehack-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-B.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+.section {
+  height: 100vh;
+  background: center center/cover;
+  display: flex;
+  line-height: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-size: 72px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+  color: #f9b43b;
+  margin-bottom: 45px;
+}
+.section__title--centered {
+  text-align: center;
+}
+.section__title--color-black {
+  color: #2f3234;
+}
+
+.btn {
+  background-color: #e45028;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #f9b43b;
+}
+
+.navigation {
+  margin-left: 50px;
+}
+
+.navigation__list, .navigation__item {
+  display: flex;
+}
+.navigation__list .navigation__item, .navigation__item .navigation__item {
+  align-items: center;
+  margin-right: 15px;
+}
+.navigation__list .navigation__item:after, .navigation__item .navigation__item:after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  margin-left: 15px;
+}
+.navigation__list .navigation__item:last-child:after, .navigation__item .navigation__item:last-child:after {
+  display: none;
+}
+.navigation__list .navigation__item:hover .navigation__link, .navigation__item .navigation__item:hover .navigation__link {
+  text-decoration: underline;
+}
+
+@font-face {
+  src: url(./fonts/Gagalin-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+}
+@font-face {
+  src: url(./fonts/Lifehack-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-B.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+.hero_container {
+  padding-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__content {
+  display: flex;
+  flex: 0.8;
+  align-items: center;
+}
+
+.hero__title {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+  font-size: 65px;
+  color: #fff;
+}
+
+.hero__text {
+  width: 50%;
+}
+
+.hero__img {
+  margin-right: 15px;
+}
+
+.hero {
+  background-color: #000400;
+}
+
+@font-face {
+  src: url(./fonts/Gagalin-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+}
+@font-face {
+  src: url(./fonts/Lifehack-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-B.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+.feature__title {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+  color: #2f3234;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.feature__img {
+  margin-bottom: 25px;
+  width: 85px;
+  height: 85px;
+}
+
+.feature__descr {
+  line-height: 1.7;
+}
+
+.features__list, .features__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.features__list .features__item, .features__item .features__item {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%/3 - 30px);
+  margin-right: 30px;
+}
+.features__list .features__item:last-child, .features__item .features__item:last-child {
+  margin: 0;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+}
+
+.reviews {
+  height: 100vh;
+}
+
+@font-face {
+  src: url(./fonts/Gagalin-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+}
+@font-face {
+  src: url(./fonts/Lifehack-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lifehack-Medium";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-B.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+@font-face {
+  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "ubuntu";
+}
+.review {
+  position: relative;
+  filter: grayscale(100%);
+  color: #fff;
+}
+.review:hover .review__hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.review__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 25px;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.review__name {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+  margin-bottom: 30px;
+}
+
+.review__text {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.review__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review__img-wrapper {
+  height: 100%;
+}

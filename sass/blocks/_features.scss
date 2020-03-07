@@ -1,0 +1,18 @@
+.features__list, .features__item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .features__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100%/3 - 30px);
+        margin-right: 30px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+    }
+}

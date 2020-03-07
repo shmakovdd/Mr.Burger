@@ -1,0 +1,16 @@
+$orange: #e45028;
+$white: #fff;
+$yellow: #f9b43b;
+$black: #2f3234;
+
+@import './sass/layout/base';
+@import './sass/layout/fonts';
+@import "./sass/blocks/header";
+@import "./sass/blocks/section";
+@import "./sass/blocks/btn";
+@import "./sass/blocks/navigation";
+@import "./sass/blocks/hero";
+@import "./sass/blocks/feature";
+@import "./sass/blocks/features";
+@import "./sass/blocks/reviews";
+@import "./sass/blocks/review";
