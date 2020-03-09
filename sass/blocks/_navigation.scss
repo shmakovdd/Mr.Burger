@@ -1,5 +1,6 @@
 .navigation {
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: 15px;
 }
 
 .navigation__list, .navigation__item {
@@ -19,13 +20,15 @@
         }
 
         &:last-child {
+            margin: 0;
             &:after {
                 display: none;
             }
         }
 
-        &:hover {
-            .navigation__link {
+       
+        .navigation__link {
+            &:hover {
                 text-decoration: underline;
             }
         }

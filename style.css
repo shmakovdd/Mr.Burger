@@ -208,7 +208,8 @@ ul, li {
 }
 
 .navigation {
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: 15px;
 }
 
 .navigation__list, .navigation__item {
@@ -227,10 +228,13 @@ ul, li {
   background: #fff;
   margin-left: 15px;
 }
+.navigation__list .navigation__item:last-child, .navigation__item .navigation__item:last-child {
+  margin: 0;
+}
 .navigation__list .navigation__item:last-child:after, .navigation__item .navigation__item:last-child:after {
   display: none;
 }
-.navigation__list .navigation__item:hover .navigation__link, .navigation__item .navigation__item:hover .navigation__link {
+.navigation__list .navigation__item .navigation__link:hover, .navigation__item .navigation__item .navigation__link:hover {
   text-decoration: underline;
 }
 
@@ -270,7 +274,7 @@ ul, li {
   font-style: normal;
   font-family: "ubuntu";
 }
-.hero_container {
+.hero__container {
   padding-top: 10px;
   height: 100%;
   display: flex;
