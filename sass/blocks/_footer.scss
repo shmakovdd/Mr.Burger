@@ -1,0 +1,41 @@
+.footer {
+    position: absolute;
+    color: $white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: center center / cover no-repeat;
+    display: flex;
+    padding: 10px 0;
+}
+
+.footer__container {
+    width: 100%;
+}
+
+.footer__contacts, .footer__socials {
+    width: 50%;
+    display: flex;
+}
+
+.footer__contacts {
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.footer__imgwrapp {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.footer__adress {
+    margin-bottom: 7px;
+}
+
+.footer__tel {
+    color: $orange;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}

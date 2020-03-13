@@ -1,5 +1,5 @@
-$feature__title-fs: 24px;
-$feature-margin: 25px;
+$feature__title-fs: 1.5rem;
+$feature-margin: 1.5625rem;
 
 @import '../layout/fonts';
 
@@ -12,8 +12,8 @@ $feature-margin: 25px;
 
 .feature__img {
     margin-bottom: $feature-margin;
-    width: 85px;
-    height: 85px;
+    width: 5.3125rem;
+    height: 5.3125rem;
 }
 
 .feature__descr {

@@ -13,3 +13,11 @@
 .reviews {
     height: 100vh;
 }
+ 
+
+@media (max-width: 780px) {
+    .reviews__item {
+        width: 50%;
+        height: 25%;
+    }
+}

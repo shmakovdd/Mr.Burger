@@ -26,20 +26,24 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 50px 25px;
+    padding: 3.125rem 1.5625rem;
     opacity: 0;
     transition: .3s;
     background-color: rgba($color: #000, $alpha: 0);
 }
 
+.review__content {
+    margin-bottom: 1.25rem;
+}
+
 .review__name {
     @include gagalin();
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
+
 
 .review__text {
     line-height: 1.7;
-    margin-bottom: 20px;
 }
 
 .review__img {
@@ -50,4 +54,17 @@
 
 .review__img-wrapper {
     height: 100%;
+}
+
+
+@media (max-width: 780px) {
+    .review__content {
+        text-align: center;
+    }
+
+    .review {
+        .btn {
+            align-self: center;
+        }
+    }
 }

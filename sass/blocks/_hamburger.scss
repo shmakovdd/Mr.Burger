@@ -1,0 +1,28 @@
+.hamburger__link {
+    width: 1.5625rem;
+    height: 0.3125rem;
+    background-color: $white;
+    border-radius: 0.3125rem;
+    position: relative;
+    display: none;
+
+    &:before {
+        content: '';
+        @extend .hamburger__link;
+        position: absolute;
+        bottom: 0.5rem;
+    }
+
+    &:after {
+        content: '';
+        @extend .hamburger__link;
+        position: absolute;
+        top: 0.5rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .hamburger__link {
+        display: block;
+    }
+}
