@@ -16,12 +16,6 @@ html {
     font-size: 15px;
 }
 
-@media (max-width: 913px) {
-    html {
-        font-size: 13px;
-    }
-}
-
 @media (max-width: 780px) {
     html {
         font-size: 12px;
@@ -38,10 +32,9 @@ html, body {
 }
 
 .container {
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
     margin: 0 auto;
     max-width: 58.75rem + 1.25rem;
+    width: 95%;
 }
 
 .wrapper {

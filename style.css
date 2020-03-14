@@ -51,11 +51,6 @@ html {
   font-size: 15px;
 }
 
-@media (max-width: 913px) {
-  html {
-    font-size: 13px;
-  }
-}
 @media (max-width: 780px) {
   html {
     font-size: 12px;
@@ -71,10 +66,9 @@ html, body {
 }
 
 .container {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
   margin: 0 auto;
   max-width: 60rem;
+  width: 95%;
 }
 
 .wrapper {
@@ -215,6 +209,7 @@ button {
   line-height: 1;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .section__title {
@@ -223,7 +218,7 @@ button {
   font-weight: normal;
   font-style: normal;
   font-family: "Gagalin Regular";
-  color: #f9b43b;
+  color: #fff;
   margin-bottom: 2.8125rem;
 }
 .section__title--centered {
@@ -277,11 +272,6 @@ button {
   text-decoration: underline;
 }
 
-@media (max-width: 912px) {
-  .navigation__item:after {
-    display: none;
-  }
-}
 @media (max-width: 780px) {
   .navigation {
     display: none;
@@ -875,4 +865,114 @@ button {
   display: flex;
   align-items: center;
   font-weight: bold;
+}
+
+.slider {
+  position: fixed;
+  right: 3%;
+  top: 15%;
+  z-index: 1000;
+}
+
+.slider__list {
+  display: flex;
+  flex-direction: column;
+}
+.slider__list .slider__item {
+  margin-bottom: 5px;
+}
+.slider__list .slider__item:last-child {
+  margin: 0;
+}
+.slider__list .slider__item--active .slider__link {
+  border: 1px solid #fff;
+}
+.slider__list .slider__item:hover .slider__link {
+  border: 1px solid #fff;
+}
+
+.slider__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+  transition: 0.3s;
+}
+.slider__link:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.menu__title {
+  position: absolute;
+  top: 6.75rem;
+  left: 5.625rem;
+}
+
+.menu__list {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+.menu__list, .menu__item, .menu__link, .menu__hidden {
+  height: 100%;
+}
+
+.menu__item {
+  display: flex;
+}
+
+.menu__link {
+  background: center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+}
+
+.menu__hidden {
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: rgba(47, 50, 52, 0.8);
+  color: #fff;
+  line-height: 1.7;
+}
+
+.menu__item--active .menu__hidden {
+  width: 33.8125rem;
+  padding: 55px 32px;
+}
+.menu__item--active .menu__hidden p {
+  opacity: 1;
+}
+.menu__item--active .menu__subtitle {
+  color: #f9b43b;
+}
+
+.menu__hidden p {
+  opacity: 0;
+  transition-delay: 2s;
+  transition: opacity 0.3s;
+}
+
+.menu__subtitle {
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Gagalin Regular";
+  color: #fff;
+  font-size: 2.5rem;
+  transform: rotate(-90deg);
+  white-space: nowrap;
 }
