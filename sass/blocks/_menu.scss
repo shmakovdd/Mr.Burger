@@ -25,6 +25,10 @@
     justify-content: center;
     align-items: center;
     width: 5rem;
+
+    @include tablets {
+        width: 3rem;
+    }
 }
 
 .menu__hidden {
@@ -40,12 +44,18 @@
     .menu__hidden {
         width: 33.8125rem;
         padding: 55px 32px;
+
+        @include tablets {
+            width: 22.8125rem;
+        }
     }
 
     .menu__hidden p {
         opacity: 1;
+        transition: .4s;
+        transition-delay: .7s;
     }
-
+    
     .menu__subtitle {
         color: $yellow;
     }
@@ -54,9 +64,9 @@
 
 .menu__hidden p {
     opacity: 0;
-    transition-delay: 2s;
-    transition: opacity .3s;
 }
+
+
 .menu__subtitle {
     display: inline-block;
     @include gagalin();
@@ -64,4 +74,8 @@
     font-size: 2.5rem;
     transform: rotate(-90deg);
     white-space: nowrap;
+
+    @include tablets {
+        font-size: 1.5rem;
+    }
 }

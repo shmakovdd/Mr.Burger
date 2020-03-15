@@ -12,105 +12,109 @@
         <div class="slider">
             <ul class="slider__list">
                 <li class="slider__item slider__item--active">
-                    <a href="" class="slider__link">
+                    <a href="#hero" class="slider__link">
 
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#features" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#burgers" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#team" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#menu" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#reviews" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#order" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#video" class="slider__link">
                         
                     </a>
                 </li>
                 <li class="slider__item">
-                    <a href="" class="slider__link">
+                    <a href="#map" class="slider__link">
                         
                     </a>
                 </li>
             </ul>
         </div>
+        <div class="hamburger">
+            <a href="" class="hamburger__link"></a>
+        </div>
         <!-- first section-->
-        <section class="section hero" style="background-image: url('./images/bg/one.jpg');">
+        <section id="hero" class="section hero" style="background-image: url('./images/bg/one.jpg');">
             <div class="container hero__container">
                 <header class="header">
                     <div class="logo">
                         <a href="" class="logo__link">
-                            <img src="./images/logo/logo.svg" alt="Mr.burger" class="logo__image">
+                            <svg class="logo__image">
+                                <use xlink:href="./images/icons/sprite.svg#logo"></use>
+                            </svg> 
                         </a>
                     </div>
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item">
-                                <a href="" class="navigation__link">о нас</a>
+                                <a href="#features" class="navigation__link">о нас</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="" class="navigation__link">бургеры</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link">команда</a>
+                                <a href="#team" class="navigation__link">команда</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link">меню</a>
+                                <a href="#menu" class="navigation__link">меню</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link">отзывы</a>
+                                <a href="#reviews" class="navigation__link">отзывы</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link">как мы работаем</a>
+                                <a href="#" class="navigation__link">как мы работаем</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="" class="navigation__link">контакты</a>
+                                <a href="#map" class="navigation__link">контакты</a>
                             </li>
                         </ul>                       
                     </nav>
-                    <a href="#" class="btn">заказать</a>
-                    <div class="hamburger">
-                        <a href="" class="hamburger__link"></a>
-                    </div>
+                    <a href="#order" class="btn">заказать</a>
                 </header>
                 <div class="hero__content">
                     <div class="hero__img">
                         <img src="./images/slide-one/burger-img.png" alt="burger" class="hero__img-elem">
                     </div>
                     <div class="hero__text">
-                        <h1 class="section__title section__title--color-yellow">мы делаем</h1>
-                        <h3 class="hero__title">натуральные бургеры</h3>
+                        <h1 class="section__title hero__title section__title--color-yellow">мы делаем</h1>
+                        <h3 class="hero__subtitle">натуральные бургеры</h3>
                     </div>
                 </div>
-                <div class="arrow-block">
+                <div class="arrow">
                     <a href="" class="arrow__link">
-                        <div class="arrow">
-                            
-                        </div>
+                        <svg class="arrow-block">
+                            <use xlink:href="./images/icons/sprite.svg#arrow-scroll">
+
+                            </use>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -118,13 +122,15 @@
         <!--end of first section-->
 
         <!--second section-->
-        <section class="section features" style="background-image: url('./images/bg/two.jpg');">
+        <section id="features" class="section features" style="background-image: url('./images/bg/two.jpg');">
             <div class="container">
                 <h2 class="section__title section__title--centered section__title--color-black">мы лучшие</h2>
                 <ul class="features__list">
                     <li class="features__item feature">
                         <div class="feature__img">
-                            <img src="./images/icons/meat.svg" alt="meat" class="feature__img-elem">
+                            <svg class="feature__img-elem">
+                                <use xlink:href="./images/icons/sprite.svg#meat"></use>
+                            </svg>
                         </div>
                         <div class="feature__textwrapper">
                         	<h3 class="feature__title">100% свежее мясо</h3>
@@ -135,7 +141,9 @@
                     </li>
                     <li class="features__item feature">
                         <div class="feature__img">
-                        	<img src="./images/icons/hand.svg" alt="meat" class="feature__img-elem">
+                            <svg class="feature__img-elem">
+                                <use xlink:href="./images/icons/sprite.svg#hand"></use>
+                            </svg>
                         </div>
                         <div class="feature__textwrapper">
                             <h3 class="feature__title">Ручная сборка</h3>
@@ -146,7 +154,9 @@
                     </li>
                     <li class="features__item feature">
                         <div class="feature__img">
-                            <img src="./images/icons/natural.svg" alt="meat" class="feature__img-elem">
+                            <svg class="feature__img-elem">
+                                <use xlink:href="./images/icons/sprite.svg#natural"></use>
+                            </svg>
                         </div>
                         <div class="feature__textwrapper">
                             <h3 class="feature__title">Натуральные ингридиенты</h3>
@@ -162,7 +172,7 @@
         <!--end of second section-->
 
         <!--fourth section-->
-        <section class="section team" style="background-image: url(./images/bg/team-bg.jpg);">
+        <section id="team" class="section team" style="background-image: url(./images/bg/team-bg.jpg);">
             <div class="team__wrapper">
                 <div class="team__content">
                     <div class="team__title section__title section__title--color-yellow">команда</div>
@@ -223,7 +233,7 @@
         <!--end of fourth section-->
 
         <!--fifth section-->
-        <section class="section menu" style="background-image: url('./images/bg/menu-bg.jpg');">
+        <section id="menu" class="section menu" style="background-image: url('./images/bg/menu-bg.jpg');">
             <div class="section__title menu__title">меню</div>
             <ul class="menu__list">
                 <li class="menu__item menu__item--active">
@@ -264,7 +274,7 @@
         <!--end of fifth section-->
 
         <!--sixth section-->
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <ul class="reviews__list">
                 <li class="reviews__item review">
                     <div class="review__img-wrapper">
@@ -274,12 +284,11 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
-                    </div>
-                    
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                      
+                    </div>                  
                 </li>
                 <li class="reviews__item review">
                     <div class="review__img-wrapper">
@@ -289,10 +298,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
+                            <a href="#" class="btn">подробнее</a>
                         </div>
-                        <a href="#" class="btn">подробнее</a>
                     </div>
                 </li>
                 <li class="reviews__item review">
@@ -303,10 +312,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                   
                     </div>
                 </li>
                 <li class="reviews__item review">
@@ -317,10 +326,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                        
                     </div>
                 </li>
                 <li class="reviews__item review">
@@ -331,10 +340,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                      
                     </div>
                 </li>
                 <li class="reviews__item review">
@@ -345,10 +354,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                       
                     </div>
                 </li>
                 <li class="reviews__item review">
@@ -359,10 +368,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                       
                     </div>
                 </li>
                 <li class="reviews__item review">
@@ -373,10 +382,10 @@
                         <div class="review__content">
                             <div class="review__name">Константин Спилберг</div>
                             <div class="review__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nulla fugit odio nostrum laboriosam distinctio possimus! Molestias expedita labore dolorum exercitationem iusto veniam maiores, doloremque ut neque praesentium! Harum?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iusto. Atque labore fugiat hic quia beatae quae, molestiae impedit necessitatibus.</p>
                             </div>
-                        </div>
-                        <a href="#" class="btn">подробнее</a>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>                     
                     </div>
                 </li>
                 
@@ -385,7 +394,7 @@
         <!--end of sixth section-->
 
         <!--eight section-->
-        <section class="section order" style="background-image: url('./images/bg/form-bg.jpg');">
+        <section id="order" class="section order" style="background-image: url('./images/bg/form-bg.jpg');">
             <div class="container">
                 <div class="section__title section__title--centered section__title--color-yellow">Закажите доставку</div>
                 <form action="" class="form">
@@ -444,7 +453,7 @@
                                 <div class="form__title form__title--nomarg">Оплата по карте</div>
                             </label>
                         </div>
-                        <div class="form__row">
+                        <div class="form__row form__row--center">
                             <label class="form__label form__label--flex">
                                 <input type="checkbox" class="form__checkbox" checked>
                                 <div class="form__fake-checkbox"></div>
@@ -462,7 +471,7 @@
         <!--end of eight section-->
 
         <!--ninth section-->
-        <section class="section map" style="background-image: url('./images/bg/map.jpg');">
+        <section id="map" class="section map" style="background-image: url('./images/bg/map.jpg');">
             <footer class="footer" style="background-image: url('./images/bg/footer-bg.jpg');">
                 <div class="container footer__container">
                     <div class="footer__contacts">
@@ -478,7 +487,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer__socials"></div>
+                    <div class="footer__socials">
+                        <svg class="footer__socials-img">
+                            <use xlink:href="./images/icons/sprite.svg#vk">
+
+                            </use>
+                        </svg>
+                        <svg class="footer__socials-img">
+                            <use xlink:href="./images/icons/sprite.svg#fb">
+
+                            </use>
+                        </svg>
+                        <svg class="footer__socials-img">
+                            <use xlink:href="./images/icons/sprite.svg#inst">
+
+                            </use>
+                        </svg>
+                        <svg class="footer__socials-img">
+                            <use xlink:href="./images/icons/sprite.svg#twitter">
+
+                            </use>
+                        </svg>
+                    </div>
                 </div>
             </footer>
         </section>

@@ -3,6 +3,10 @@
     right: 3%;
     top: 15%;
     z-index: 1000;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .slider__list {

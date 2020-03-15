@@ -8,12 +8,26 @@ $feature-margin: 1.5625rem;
     color: $black;
     font-size: $feature__title-fs;
     margin-bottom: $feature-margin;
+    
+    @include phones {
+        $feature-margin: 0.5625rem;
+    }
 }
 
 .feature__img {
     margin-bottom: $feature-margin;
     width: 5.3125rem;
     height: 5.3125rem;
+    
+    @include phones {
+        margin-bottom: 0;
+        max-width: 5.3125rem;
+        min-width: 5.3125rem;
+        max-height: 5.3125rem;
+        height: 5.3125rem;
+        margin-right: 1.25rem;
+
+    }
 }
 
 .feature__descr {

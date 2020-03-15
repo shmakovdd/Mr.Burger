@@ -15,35 +15,59 @@
     .btn {
         align-self: flex-start;
     }
+
+    p {
+        font-size: 0.875rem;
+    }
 }
 
 .review__hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 3.125rem 1.5625rem;
+    padding: 0 1.5625rem;
     opacity: 0;
     transition: .3s;
     background-color: rgba($color: #000, $alpha: 0);
+    height: 100%;
+    z-index: 1000;
+    position: relative;
 }
 
 .review__content {
-    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .review__name {
     @include gagalin();
     margin-bottom: 1.875rem;
+
+    @include tablets {
+        margin-bottom: 0.875rem;
+    }
+
+    @include phones {
+        font-size: 1.5rem;
+    }
 }
 
 
 .review__text {
     line-height: 1.7;
+    margin-bottom: 1.25rem;
+
+    @include tablets {
+        margin-bottom: 0.875rem;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .review__img {
@@ -53,7 +77,11 @@
 }
 
 .review__img-wrapper {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 

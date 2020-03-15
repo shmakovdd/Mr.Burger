@@ -10,18 +10,42 @@
 }
 
 .footer__container {
-    width: 100%;
+    display: flex;
+    
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.footer__contacts {
+    justify-content: flex-start;
+
+    @include phones {
+        margin-bottom: 10px;
+    }
 }
 
 .footer__contacts, .footer__socials {
     width: 50%;
     display: flex;
+    align-items: center;
+
+    @include phones {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
-.footer__contacts {
-    justify-content: flex-start;
-    margin-right: auto;
+.footer__socials {
+    justify-content: flex-end;
+
+    @include phones {
+        justify-content: center;
+    }
 }
+
+
+
 
 .footer__imgwrapp {
     width: 15px;
@@ -38,4 +62,13 @@
     display: flex;
     align-items: center;
     font-weight: bold;
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.footer__socials-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }

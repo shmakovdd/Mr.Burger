@@ -11,44 +11,52 @@
     display: flex;
     flex: .8;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 6rem;
+    }
+
+    @include phones {
+        padding: 0 2rem;
+    }
 }
 
 .hero__title {
+    @include phones {
+        font-size: 4rem;
+    }
+}
+
+.hero__subtitle {
     @include lifehack();
     font-size: 4.0625rem;
     color: $white;
+
+    @include phones {
+        font-size: 3rem;
+    }
 }
 
 .hero__text {
     width: 50%;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .hero__img {
     margin-right: 0.9375rem;
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: 1.875rem;
+    }
 }
 
 .hero {
     background-color: #000400;
 }
 
-@media (max-width: 780px) {
-    html {
-        font-size: 14px;
-    }
-
-    .hero__container {
-        max-width: 450px;
-    }
-
-    .hero__img {
-        margin-right: 0;
-        margin-bottom: 2.8125rem;
-    }
-
-    .hero__content, .hero__text {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-}

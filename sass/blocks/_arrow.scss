@@ -1,14 +1,12 @@
-
-.arrow-block {
-    display: flex;
-    justify-content: center;
+.arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.arrow{
-    width: 1.875rem;
-    height: 1.875rem;
-    border: 0.125rem solid transparent;
-    transform: rotate(45deg);
-    border-bottom-color: #fff;
-    border-right-color: #fff;
+.arrow__link {
+    display: block;
+    width: 2.5rem;
+    height: 1.25rem;
 }

@@ -3,6 +3,7 @@ $white: #fff;
 $yellow: #f9b43b;
 $black: #2f3234;
 
+@import "./sass/blocks/media";
 @import './sass/layout/base';
 @import './sass/layout/fonts';
 @import "./sass/blocks/header";
@@ -22,3 +23,4 @@ $black: #2f3234;
 @import "./sass/blocks/footer";
 @import "./sass/blocks/slider";
 @import "./sass/blocks/menu";
+@import "./sass/blocks/logo";

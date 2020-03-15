@@ -1,3 +1,10 @@
+.hamburger {
+    position: fixed;
+    top: 32px;
+    right: 21px;
+    z-index: 1000;
+}
+
 .hamburger__link {
     width: 1.5625rem;
     height: 0.3125rem;
@@ -5,6 +12,10 @@
     border-radius: 0.3125rem;
     position: relative;
     display: none;
+
+    @include tablets {
+        display: block;
+    }
 
     &:before {
         content: '';
@@ -21,8 +32,3 @@
     }
 }
 
-@media (max-width: 780px) {
-    .hamburger__link {
-        display: block;
-    }
-}

@@ -1,6 +1,12 @@
 .navigation {
     margin-left: auto;
     margin-right: 0.9375rem;
+
+
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .navigation__list, .navigation__item {
@@ -17,6 +23,9 @@
             border-radius: 50%;
             background: $white;
             margin-left: 0.9375rem;
+            @media screen and (max-width:877px) {
+                display: none;
+            }
         }
 
         &:last-child {
@@ -36,9 +45,3 @@
     
 }
 
-
-@media (max-width: 780px) {
-    .navigation {
-        display: none;
-    }
-}

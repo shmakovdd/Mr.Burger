@@ -30,11 +30,24 @@
 
 .form {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 7.125rem;
+    }
+
+    @include phones {
+        padding: 0 3.125rem;
+    }
 }
 
 .form__textarea {
     max-height: 5rem;
     max-width: 28.75rem;
+
+    @include tablets {
+        max-width: 100%;
+    }
 }
 
 .form__col {
@@ -44,10 +57,22 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        margin-right: 0;
+        &:first-child {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .form__radios {
-    margin-bottom: 45px;
+    margin-bottom: 2.8125rem;
+
+    @include phones{
+        margin-bottom: 1.25rem;
+        justify-content: center;
+    }
 
 }
  
@@ -133,4 +158,16 @@
     display: flex;
     align-items: center;
     flex: none;
+}
+
+.form__row--center {
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.form__btns {
+    @include phones {
+        justify-content: center;
+    }
 }
