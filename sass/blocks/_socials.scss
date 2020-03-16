@@ -14,4 +14,9 @@
 .socials__img {
     width: 20px;
     height: 20px;
+    fill: rgba(255, 255, 255, 0.3);
+
+    &:hover {
+        fill: $white;
+    }
 }
