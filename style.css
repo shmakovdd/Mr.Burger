@@ -75,7 +75,7 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -709,6 +709,9 @@ svg {
 .team__item {
   margin-bottom: 30px;
 }
+.team__item:last-child {
+  margin: 0;
+}
 
 .team__hidden {
   padding-left: 10px;
@@ -1059,12 +1062,6 @@ svg {
   }
 }
 
-.footer__socials-img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
 .slider {
   position: fixed;
   right: 3%;
@@ -1202,4 +1199,20 @@ svg {
 .logo__image {
   width: 5.625rem;
   height: 4.375rem;
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 10px;
+}
+.socials__item:last-child {
+  margin: 0;
+}
+
+.socials__img {
+  width: 20px;
+  height: 20px;
 }

@@ -26,6 +26,10 @@
 .team__item {
     margin-bottom: 30px;
 
+    &:last-child {
+        margin: 0;
+    }
+
 }
 
 .team__hidden {

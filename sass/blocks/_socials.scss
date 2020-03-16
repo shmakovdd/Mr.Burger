@@ -1,0 +1,17 @@
+.socials__list {
+    display: flex;
+
+}
+
+.socials__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.socials__img {
+    width: 20px;
+    height: 20px;
+}
