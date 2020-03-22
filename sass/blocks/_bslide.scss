@@ -1,0 +1,60 @@
+.bslide {
+    display: flex;
+    align-items: center;
+    padding: 4.375rem 0;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 6rem;
+    }
+}
+
+.bslide__image-wrapper, .bslide__block {
+    flex: 1;
+}
+
+.bslide__image-wrapper {
+    margin-right: 30px;
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.bslide__image {
+    flex-shrink: 0;
+}
+
+.bslide__order {
+    display: flex;
+    
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.bslide__price {
+    @include gagalin();
+    display: flex;
+    align-items: flex-end;
+    color: $orange;
+    margin-right: 20px;
+}
+
+.bslide__text {
+    line-height: 1.7;
+    margin-bottom: 2.8125rem;
+}
+
+.bslide__count {
+    font-size: 72px;
+    margin-right: 10px;
+}
+
+.bslide__button {
+    align-self: flex-end;
+}
+
+.bslide__wallet {
+    font-size: 30px;
+}

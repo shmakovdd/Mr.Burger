@@ -3,6 +3,9 @@
     padding: 0.625rem 0.9375rem;
     border-radius: 0.3125rem;
     transition: .3s;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
     
     &:hover {
         background: $yellow;

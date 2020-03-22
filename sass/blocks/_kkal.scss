@@ -1,0 +1,30 @@
+.kkal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5.625rem;
+    height: 5.625rem;
+    opacity: .6;
+    @include gagalin();
+
+    @include tablets {
+        bottom: initial;
+        left: initial;
+        top: 0;
+        right: 5%;
+    }
+}
+
+.kkal__count {
+    position: absolute;
+    font-size: 25px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kkal__value {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
