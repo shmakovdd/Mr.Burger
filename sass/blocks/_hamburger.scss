@@ -6,6 +6,11 @@
     right: 36px;
     z-index: 1000;
     cursor: pointer;
+    display: none;
+
+    @include tablets {
+        display: block;
+    }
 }
 
 .hamburger__line {

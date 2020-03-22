@@ -667,6 +667,12 @@ svg {
   right: 36px;
   z-index: 1000;
   cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 .hamburger__line:nth-child(1) {
