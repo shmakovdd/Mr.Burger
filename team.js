@@ -7,23 +7,24 @@ function accordeonTeam() {
 
         const target = event.target;
 
-        if(target.classList.contains('.team__name')) {
+        if(target.classList.contains('team__name')) {
             const worker = target.parentNode;
             const content = target.nextElementSibling;
             const contentHeight = content.firstElementChild.clientHeight;
-            
+
+
             for (iterator of workers) {
                 if (iterator !== worker) {
-                    iterator.classList.remove('.team__item--active');
+                    iterator.classList.remove('team__item--active');
                     iterator.lastElementChild.style.height = 0;
                 }
             }
 
-            if (worker.classList.contains('.team__item--active')) {
-                worker.classList.remove('.team__item--active');
+            if (worker.classList.contains('team__item--active')) {
+                worker.classList.remove('team__item--active');
                 content.style.height = 0;
                 } else {
-                    worker.classList.add('.team__item--active');
+                    worker.classList.add('team__item--active');
                     content.style.height = contentHeight + "px";
                 }
         }        
@@ -32,3 +33,4 @@ function accordeonTeam() {
 }
 
 accordeonTeam();
+
