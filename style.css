@@ -758,8 +758,6 @@ svg {
 
 .team__hidden {
   padding-left: 10px;
-  height: 0;
-  overflow: hidden;
   display: flex;
 }
 @media screen and (max-width: 780px) {
@@ -796,6 +794,7 @@ svg {
   display: flex;
   align-items: center;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .team__name:before {
   content: "";
@@ -839,6 +838,11 @@ svg {
   line-height: 1.7;
 }
 
+.team__hidden-wrapper {
+  height: 0;
+  overflow: hidden;
+}
+
 .team__item--active .team__name {
   color: #f9b43b;
 }
@@ -849,7 +853,7 @@ svg {
   margin-right: 10px;
   border-top-width: 0px;
 }
-.team__item--active .team__hidden {
+.team__item--active .team__hidden-wrapper {
   height: initial;
 }
 
