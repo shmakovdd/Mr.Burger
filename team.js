@@ -8,10 +8,10 @@ function accordeonTeam() {
         const target = event.target;
 
         if(target.classList.contains('.team__name')) {
-            const worker = target.querySelector('.team__name');
+            const worker = target.parentNode;
             const content = target.nextElementSibling;
             const contentHeight = content.firstElementChild.clientHeight;
-                
+                console.log(worker)
             for (iterator of workers) {
                 if (iterator !== worker) {
                     iterator.classList.remove('.team__item--active');
