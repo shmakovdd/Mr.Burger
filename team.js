@@ -11,7 +11,7 @@ function accordeonTeam() {
             const worker = target.parentNode;
             const content = target.nextElementSibling;
             const contentHeight = content.firstElementChild.clientHeight;
-                console.log(worker)
+            
             for (iterator of workers) {
                 if (iterator !== worker) {
                     iterator.classList.remove('.team__item--active');
