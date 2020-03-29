@@ -943,7 +943,7 @@ svg {
   display: none;
 }
 
-.form__btn {
+.form__btn, .form__btn--clear {
   font-weight: 500;
   color: #fff;
   border: none;
@@ -1033,6 +1033,10 @@ svg {
   .form__btns {
     justify-content: center;
   }
+}
+
+.form__error {
+  color: red;
 }
 
 .map {

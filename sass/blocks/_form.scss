@@ -90,6 +90,7 @@
 }
 
 .form__btn--clear {
+    @extend .form__btn;
     background: none;
     text-transform: capitalize;
 }
@@ -170,4 +171,8 @@
     @include phones {
         justify-content: center;
     }
+}
+
+.form__error {
+    color: red;
 }
