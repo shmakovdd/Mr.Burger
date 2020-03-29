@@ -751,28 +751,31 @@
         <section id="order" class="section order" style="background-image: url('./images/bg/form-bg.jpg');">
             <div class="container">
                 <div class="section__title section__title--centered section__title--color-yellow">Закажите доставку</div>
-                <form action="" class="form">
+                <form action="" class="form" id="form">
                     <div class="form__col">
                         <div class="form__row">
                             <label class="form__label">
                                 <div class="form__title">Имя</div>
-                                <input type="text" class="form__input">
+                                <input type="text" placeholder= "Ваше имя" class="form__input" name="name" required>
+                                <div class="form__error"></div>
                             </label>
                             <label class="form__label">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input">
+                                <input type="text" placeholder="Ваш телефон" class="form__input" name="phone" required>
+                                <div class="form__error"></div>
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__label">
                                 <div class="form__title">Улица</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="street" required>
+                                <div class="form__error"></div>
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__label">
                                 <div class="form__title">Дом</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="flat" required>
                             </label>
                             <label class="form__label">
                                 <div class="form__title">Корпус</div>
@@ -780,11 +783,11 @@
                             </label>
                             <label class="form__label">
                                 <div class="form__title">Квартира</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="flat_number">
                             </label>
                             <label class="form__label">
                                 <div class="form__title">Этаж</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="floor">
                             </label>
                         </div>
                     </div>
@@ -792,7 +795,8 @@
                         <div class="form__row">
                             <label class="form__label">
                                 <div class="form__title">Комментарий</div>
-                                <textarea  class="form__textarea form__input"></textarea>
+                                <textarea  class="form__textarea form__input" name="comment" required></textarea>
+                                <div class="form__error"></div>
                             </label>
                         </div>
                         <div class="form__row form__radios">
@@ -815,8 +819,8 @@
                             </label>
                         </div>
                         <div class="form__row form__btns">
-                            <button type="button" class="form__btn btn">заказать</button>
-                            <button type="button" class="form__btn form__btn--clear">Очистить</button>
+                            <button type="button" class="form__btn btn" id="send" >заказать</button>
+                            <button type="button" class="form__btn--clear" id="clear" >Очистить</button>
                         </div>
                     </div>
                 </form>
@@ -989,5 +993,6 @@
 <script src="team.js"></script>
 <script src="popup.js"></script>
 <script src="slider.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
