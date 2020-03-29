@@ -1,5 +1,13 @@
 function reviewsPopup() {
     const review = document.querySelector('.reviews__list');
+    const popup = document.querySelector('.popup');
+
+    popup.addEventListener('click', e=> {
+        e.preventDefault();
+        if (e.target === popup) {
+            popup.classList.add('popup--closed');
+        }
+    })
 
     review.addEventListener('click', function(e) {
         const target = e.target;
@@ -14,7 +22,7 @@ function reviewsPopup() {
         }
 
         function renderPopup(name, text) {
-            const popup = document.querySelector('.popup');
+
 
 
             popup.classList.remove('popup--closed');
