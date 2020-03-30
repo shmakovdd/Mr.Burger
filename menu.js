@@ -1,18 +1,46 @@
-let hamburger = document.querySelector('.hamburger');
-let body = document.querySelector('body');
-let hidden = document.querySelector('.hidden');
-let links = document.querySelectorAll('.hidden__link');
+function accordMenu() {
+
+    const menulist = document.querySelector('.menu__list');
+    const menuItem = document.querySelectorAll('.menu__item');
 
 
-links.forEach(function(element) {
-    element.addEventListener( "click", toggleMenu );
-    }
-)
+    menulist.addEventListener('click', e=> {
+        e.preventDefault();
+        let target = e.target.parentNode; // ссылка 
+        let item = target.parentNode; // лишка
+        let content = target.nextElementSibling; // контент
+        if (e.target.classList.contains('menu__subtitle')) {
+            console.log(e.target);
+            moveMenu();
+        }
+        
+        target = e.target;
+        item = target.parentNode;
+        content = target.nextElementSibling;
 
-function toggleMenu() {
-    hamburger.classList.toggle('hamburger--active');
-    body.classList.toggle('body--active');
-    hidden.classList.toggle('hidden--active');
+        if (e.target.classList.contains('menu__link')) {
+            console.log(e.target);
+            moveMenu();
+        }
+
+        function moveMenu() {
+            for (iterator of menuItem) {
+                if (iterator != item) {
+                    iterator.classList.remove('menu__item--active');
+                }
+            }
+
+            if (item.classList.contains('menu__item--active')) {
+                item.classList.remove('menu__item--active')
+            }   else {
+                item.classList.add('menu__item--active');
+            }
+        }
+    
+    })
+
+    
+
 }
 
-hamburger.addEventListener('click', toggleMenu);
+accordMenu();
