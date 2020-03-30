@@ -37,19 +37,55 @@ phone.addEventListener ('keydown', function(event) {
 sendButton.addEventListener('click', function(event) {
 
     if(validateForm(myForm)) {
-        const formData = {
-            name: myForm.elements.name.value,
-            phone: myForm.elements.phone.value,
-            comment: myForm.elements.comment.value,
-            to: 'test@mail.com'
-        };
+        const data = new FormData();
+        data.append("name", myForm.elements.name.value);
+        data.append("phone", myForm.elements.phone.value);
+        data.append("comment", myForm.elements.comment.value);
+        data.append("to", "test@mail.ru");
+        
 
         const xhr = new XMLHttpRequest();
         xhr.responseType ='json';
         xhr.open ('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.send (JSON.stringify(formData));
+        xhr.send (JSON.stringify(data));
         xhr.addEventListener('load', ()=> {
-            console.log(xhr.response);
+            if (!xhr.response.status) {
+                badMessage();    
+            } else {
+                goodMessage();
+            }
+        })
+    }
+
+    function badMessage() {
+        const modalWindow = document.querySelector('.modalWindow');
+        const modalText = document.querySelector('.modalWindow__text');
+        modalText.textContent = 'Не удалось отправить запрос';
+        modalWindow.classList.remove('modalWindow--closed');
+        modalWindow.addEventListener('click', e=> {
+            e.preventDefault();
+            if (e.target === modalWindow) {
+                modalWindow.classList.add('modalWindow--closed');
+            }
+        })
+        modalWindow.querySelector('.modalWindow__close').addEventListener('click', e=> {
+            modalWindow.classList.add('modalWindow--closed');
+        })
+    }
+
+    function goodMessage() {
+        const modalWindow = document.querySelector('.modalWindow');
+        const modalText = document.querySelector('.modalWindow__text');
+        modalText.textContent = 'Заказ отправлен';
+        modalWindow.classList.remove('modalWindow--closed');
+        modalWindow.addEventListener('click', e=> {
+            e.preventDefault();
+            if (e.target === modalWindow) {
+                modalWindow.classList.add('modalWindow--closed');
+            }
+        })
+        modalWindow.querySelector('.modalWindow__close').addEventListener('click', e=> {
+            modalWindow.classList.add('modalWindow--closed');
         })
     }
 
