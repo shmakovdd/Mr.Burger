@@ -1,6 +1,7 @@
-function reviewsPopup() {
     const review = document.querySelector('.reviews__list');
     const popup = document.querySelector('.popup');
+function reviewsPopup() {
+
 
     popup.addEventListener('click', e=> {
         e.preventDefault();
@@ -20,25 +21,25 @@ function reviewsPopup() {
             renderPopup(name, text)
 
         }
-
-        function renderPopup(name, text) {
-
-
-
-            popup.classList.remove('popup--closed');
-
-            popup.querySelector('.popup__name').textContent = name;
-            popup.querySelector('.popup__text').textContent = text;
-
-            popup.querySelector('.popup__close').addEventListener('click', function(e) {
-                e.preventDefault();
-                popup.classList.add('popup--closed');
-            })
-
-        }
-
     })
 
 }
 
+
+
+function renderPopup(name, text) {
+
+
+
+    popup.classList.remove('popup--closed');
+
+    popup.querySelector('.popup__name').textContent = name;
+    popup.querySelector('.popup__text').textContent = text;
+
+    popup.querySelector('.popup__close').addEventListener('click', function(e) {
+        e.preventDefault();
+        popup.classList.add('popup--closed');
+    })
+
+}
 reviewsPopup();
