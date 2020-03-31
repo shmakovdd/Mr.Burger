@@ -142,45 +142,18 @@ const deliverySubmit = document.querySelector('#send');
             xhr.send(formData);
             xhr.addEventListener('load', ()=> {
                 if (!xhr.response.status) {
-                    badMessage();    
+                    let name = 'Ошибка';
+                    let text = ''
+                    renderPopup(name, text); 
                 } else {
-                    goodMessage();
+                    let name = 'Заказ отправлен';
+                    let text = '';
+                    renderPopup(name, text) ;
                 }
             })
         }
     
-        function badMessage() {
-            const modalWindow = document.querySelector('.modalWindow');
-            const modalText = document.querySelector('.modalWindow__text');
-            modalText.textContent = 'Не удалось отправить запрос';
-            modalWindow.classList.remove('modalWindow--closed');
-            modalWindow.addEventListener('click', e=> {
-                e.preventDefault();
-                if (e.target === modalWindow) {
-                    modalWindow.classList.add('modalWindow--closed');
-                }
-            })
-            modalWindow.querySelector('.modalWindow__close').addEventListener('click', e=> {
-                modalWindow.classList.add('modalWindow--closed');
-            })
-        }
-    
-        function goodMessage() {
-            const modalWindow = document.querySelector('.modalWindow');
-            const modalText = document.querySelector('.modalWindow__text');
-            modalText.textContent = 'Заказ отправлен';
-            modalWindow.classList.remove('modalWindow--closed');
-            modalWindow.addEventListener('click', e=> {
-                e.preventDefault();
-                if (e.target === modalWindow) {
-                    modalWindow.classList.add('modalWindow--closed');
-                }
-            })
-            modalWindow.querySelector('.modalWindow__close').addEventListener('click', e=> {
-                modalWindow.classList.add('modalWindow--closed');
-            })
-        
-            }
+      
         
     });
     function validateForm(form){
