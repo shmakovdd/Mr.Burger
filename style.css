@@ -1808,6 +1808,10 @@ svg {
   height: 38%;
 }
 
+.video__play--active {
+  visibility: hidden;
+}
+
 .video__toolbar {
   background-color: #3a3c39;
   position: absolute;
