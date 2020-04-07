@@ -79,7 +79,7 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1041,6 +1041,7 @@ svg {
 
 .map {
   position: relative;
+  width: 100%;
 }
 
 .footer {
@@ -1052,6 +1053,7 @@ svg {
   background: center center/cover no-repeat;
   display: flex;
   padding: 10px 0;
+  z-index: 1000;
 }
 
 .footer__container {
@@ -1137,10 +1139,11 @@ svg {
 .slider__list .slider__item:last-child {
   margin: 0;
 }
-.slider__list .slider__item--active .slider__link {
+.slider__list .slider__item:hover .slider__link {
   border: 1px solid #fff;
 }
-.slider__list .slider__item:hover .slider__link {
+
+.slider__item.is-active .slider__link {
   border: 1px solid #fff;
 }
 
@@ -1314,18 +1317,22 @@ svg {
   }
 }
 
-.bslider__link-left, .bslider__link-right {
+.bslider__link {
   display: block;
   width: 2rem;
   height: 1.25rem;
+  position: absolute;
+  top: 50%;
 }
 
-.bslider__link-left {
+.bslider__link--left {
   transform: rotate(90deg);
+  left: -3%;
 }
 
-.bslider__link-right {
+.bslider__link--right {
   transform: rotate(-90deg);
+  right: -3%;
 }
 
 .composition {
@@ -1761,4 +1768,81 @@ svg {
   background-color: #f9b43b;
   border-radius: 3px;
   transform: rotate(-45deg);
+}
+
+.main-content {
+  height: 100%;
+  transition: transform 1s;
+}
+
+.video {
+  align-items: center;
+}
+
+.video__player {
+  position: relative;
+  cursor: pointer;
+}
+
+.video__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+  width: 15%;
+  height: 38%;
+}
+
+.video__toolbar {
+  background-color: #3a3c39;
+  position: absolute;
+  bottom: 0;
+  height: 7%;
+  display: flex;
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+
+.duration__play {
+  fill: #636263;
+}
+
+.duration {
+  display: flex;
+  width: 80%;
+  margin-right: 10px;
+}
+
+.duration__play {
+  width: 12px;
+  margin-right: 10px;
+}
+
+.duration__length {
+  width: 100%;
+}
+
+.sound {
+  display: flex;
+}
+
+.sound__btn {
+  width: 15px;
+  margin-right: 10px;
+  fill: #636263;
 }
