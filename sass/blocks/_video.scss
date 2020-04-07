@@ -1,0 +1,42 @@
+.video {
+    align-items: center;
+}
+
+.video__player {
+    position: relative;
+    cursor: pointer;
+}
+.video__container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#video {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.video__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+    width: 15%;
+    height: 38%;
+}
+
+.video__toolbar {
+    background-color: #3a3c39;
+    position: absolute;
+    bottom: 0;
+    height: 7%;
+    display: flex;
+    width: 100%;
+    padding: 0 10px 0 10px;
+}

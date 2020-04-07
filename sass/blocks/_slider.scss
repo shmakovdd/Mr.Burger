@@ -19,15 +19,19 @@
             margin: 0;
         }
 
-        &--active .slider__link {
-            border: 1px solid $white
-        }
+        // &--active .slider__link {
+        //     border: 1px solid $white
+        // }
 
         &:hover .slider__link {
             border: 1px solid $white;
         }
     }
 
+}
+
+.slider__item.is-active .slider__link {
+    border: 1px solid $white;
 }
 
 .slider__link {

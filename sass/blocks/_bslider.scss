@@ -38,16 +38,20 @@
     }
 }
 
-.bslider__link-left, .bslider__link-right {
+.bslider__link {
     display: block;
     width: 2rem;
     height: 1.25rem;
+    position: absolute;
+    top: 50%;
 }
 
-.bslider__link-left {
+.bslider__link--left {
     transform: rotate(90deg);
+    left: -3%;
 }
 
-.bslider__link-right {
+.bslider__link--right {
     transform: rotate(-90deg);
+    right: -3%;
 }   
