@@ -1822,10 +1822,6 @@ svg {
   padding: 0 10px 0 10px;
 }
 
-.duration__play {
-  fill: #636263;
-}
-
 .duration {
   display: flex;
   width: 80%;
@@ -1835,10 +1831,28 @@ svg {
 .duration__play {
   width: 12px;
   margin-right: 10px;
+  fill: #636263;
 }
 
 .duration__length {
   width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #636263;
+  outline: none;
+  margin-top: 9px;
+}
+
+.duration__length::-webkit-slider-thumb {
+  width: 13px;
+  height: 13px;
+  background-color: #636263;
+  border-radius: 5px;
+  -webkit-appearance: none;
+          appearance: none;
+  outline: none;
 }
 
 .sound {
